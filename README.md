@@ -35,7 +35,7 @@ The dashboard allows business users to explore sales trends over time, compare p
 ## Business Problem
 Prior to this project the coffee business relied on static, manual spreadsheets for reporting. The pain points were:
 - No single source of truth for sales aggregated across orders, customers and products.
--Insufficient visibility into temporal trends (seasonality, growth).
+- Insufficient visibility into temporal trends (seasonality, growth).
 - Hard to compare sales across countries, roast types, and package sizes quickly.
 - No simple way to evaluate loyalty card effectiveness or to identify top customers for retention/upsell.
 - Manual reporting took considerable time and was error-prone.
@@ -48,4 +48,20 @@ Deliver a repeatable, documented Excel-based analysis and dashboard that:
 - Presents an interactive dashboard (timeline slicer, roast/size/loyalty slicers, charts).
 - Provides documented formulas and reproducible steps for others to follow and extend.
 - Produces actionable recommendations and a hand-off path to scale (Power BI / SQL) if needed.
+
+## Key Metrics & KPIs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
