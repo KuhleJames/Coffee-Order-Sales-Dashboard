@@ -17,7 +17,7 @@
 - [Data Preparation](#data-preparation)
   - [Cleaning Steps & Examples](#cleaning-steps-&-examples)
   - [Quality Checks](#Quality-Checks)
-- [Excel Analysis: How each business question was answered](#excel-analysis:-how-each-business-question-was-answered)
+- [Excel Analysis How each business question was answered](#excel-analysis-how-each-business-question-was-answered)
 - [Advanced Formulas & Calculations](#advanced-formulas-&-calculations)
   - [Excel formulas (examples)](#excel-formulas-(examples))
 - [Dashboard Design](#dashboard-design) 
