@@ -191,8 +191,44 @@ Before building the dashboard, the raw Excel data was cleaned, standardized, and
 - Validated lookup accuracy by sampling random rows and confirming XLOOKUP and INDEX-MATCH results matched source sheets.
 - Ensured categorical values matched dashboard slicers for correct filtering (e.g., Roast Type, Size, Loyalty Card).
 
+## Excel Analysis
+The cleaned and enriched dataset enabled the creation of pivot tables, charts, and interactive filters to answer key business questions. Each question was addressed using Excel formulas, XLOOKUP, INDEX-MATCH, IF statements, and pivot tables.
 
+- Business Questions Answered
+  - How have total coffee sales trended over time?
+    - Created a PivotTable with Order Date in rows (grouped by month/quarter/year) and Sales in values.
+    - Visualized trends using a line chart with a timeline slicer for interactive filtering.
+  - Which countries contribute the most to overall coffee sales?
+    - PivotTable: Country in rows, Sales in values.
+    - Displayed as a bar chart for quick comparison and filtered by slicers (Roast, Size, Loyalty).
+  - Who are the top 5 customers by total sales value?
+    - PivotTable: Customer Name in rows, Sales in values.
+    - Sorted descending by sales and filtered to Top 5.
+    - Visualized with a bar chart for easy identification of high-value customers.
+  - Which coffee roast type generates the highest sales revenue?
+    - PivotTable: Roast Type in rows, Sales in values.
+    - Combined with slicer filters to view trends by date, size, or loyalty segment.
+  - How does coffee size (250g, 0.5kg, 1kg) influence sales volume and revenue?
+    - PivotTable: Size in rows, Sales and Quantity in values.
+    - Charts showed revenue share by size, highlighting the most popular packaging.
+  - What impact does the loyalty card program have on sales?
+    - PivotTable: Loyalty Card in rows, Sales and Quantity in values.
+    - Compared averages using an IF formula to segment loyalty vs non-loyalty customers:
 
+      - =IF([@Loyalty_Card]="Yes", Sales, 0)
+
+    - Revealed that loyalty card members spend more on average.
+  - Which coffee types are most popular among customers?
+    - PivotTable: Coffee Type in rows, Sales in values.
+    - Charted the distribution to identify top-selling coffee types (Arabica, Robusta, etc.).
+  - Are certain roast types or sizes more popular in specific countries?
+    - PivotTable: Country in rows, Roast Type / Size in columns, Sales in values.
+    - Enabled cross-country comparison using slicers to drill down by date or loyalty status.
+
+- Analysis Approach
+  - All PivotTables were connected to interactive slicers (Timeline, Roast Type, Size, Loyalty Card) to allow dynamic exploration.
+  - Calculated fields and helper columns ensured sales metrics were correctly segmented.
+  - Charts were formatted consistently to highlight trends and key insights.
 
 
 
