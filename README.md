@@ -95,7 +95,8 @@ Documentation & Workflow Traceability
 The dataset for this project comes from a YouTube tutorial by Mo Chen, which provides fictional coffee sales data for learning purposes. The data simulates real-world coffee transactions, including customer details, product attributes, and order history, allowing us to build an end-to-end dashboard scenario.
 ### Structure & Format
 The data is organised into three separate Excel sheets, each serving a distinct role in the analysis:
-- Orders
+
+Orders
 
 | Column | Description |
 | --- | --- | 
@@ -116,7 +117,7 @@ The data is organised into three separate Excel sheets, each serving a distinct 
 | Roast Type Name | Pulled via IF |
 | Loyalty Card | Pulled via XLOOKUP |
 
-- Customers
+Customers
 
 | Customer ID | Unique identifier |
 | Customer Name | Full name |
