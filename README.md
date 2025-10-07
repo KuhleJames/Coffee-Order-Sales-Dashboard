@@ -147,5 +147,50 @@ Note
 - The dataset is provided in Excel format (.xlsx), making it easy to import into Excel for cleaning, enrichment, and analysis.
 - Orders are linked to Customers and Products via Customer ID and Product ID, forming a simple relational structure suitable for lookups and dashboarding.
 
+## Data Preparation
+Before building the dashboard, the raw Excel data was cleaned, standardized, and enriched to ensure accuracy and consistency.
+### Cleaning Steps & Examples
+- Duplicate Removal:
+  - Checked for duplicate Order ID and Customer ID entries.
+  - Removed any repeated rows to avoid inflating sales metrics.
+- Standardizing Dates:
+  - Converted Order Date to DD-MMM-YYYY format.
+  - Ensured all pivot tables and charts interpret dates consistently.
+- Numeric Conversion:
+  - Converted Unit Price and Sales columns to numeric format for calculations and aggregation.
+  - Removed any currency symbols or text artifacts.
+- Text Standardization:
+  - Roast types standardized to Light / Medium / Dark.
+  - Sizes standardized to 250g, 0.5kg, 1kg.
+  - Loyalty card values set consistently to Yes / No.
+- Calculated Fields:
+  - Sales = Quantity × Unit Price
+
+    - =Quantity * Unit_Price
+
+  - Loyalty Segmentation:
+
+    - =IF(Loyalty_Card="Yes","Loyalty","Non-Loyalty")
+
+  - Enriched order data with customer and product attributes:
+    - XLOOKUP → Pull Customer Name, Email, Country
+    - INDEX + MATCH → Pull Coffee Type, Roast Type, Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
