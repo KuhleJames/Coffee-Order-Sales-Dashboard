@@ -176,8 +176,19 @@ Before building the dashboard, the raw Excel data was cleaned, standardized, and
     - XLOOKUP → Pull Customer Name, Email, Country
     - INDEX + MATCH → Pull Coffee Type, Roast Type, Size
 
+### Data Enrichment Example
+- Customer Lookup:
 
+  - =XLOOKUP([@Customer_ID], Customers[Customer_ID], Customers[Customer_Name])
 
+- Product Attribute Lookup (Roast Type example):
+
+  - INDEX(Products[Roast_Type], MATCH([@Product_ID], Products[Product_ID], 0))
+
+### Quality Checks
+- Verified no missing values for critical columns (Order ID, Customer ID, Product ID, Sales).
+- Validated lookup accuracy by sampling random rows and confirming XLOOKUP and INDEX-MATCH results matched source sheets.
+- Ensured categorical values matched dashboard slicers for correct filtering (e.g., Roast Type, Size, Loyalty Card).
 
 
 
