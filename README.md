@@ -117,6 +117,7 @@ Orders
 | Roast Type Name | Pulled via IF |
 | Loyalty Card | Pulled via XLOOKUP |
 
+
 Customers
 
 | Customer ID | Unique identifier |
