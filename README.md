@@ -96,6 +96,7 @@ The dataset for this project comes from a YouTube tutorial by Mo Chen, which pro
 ### Structure & Format
 The data is organised into three separate Excel sheets, each serving a distinct role in the analysis:
 - Orders
+
 | Column | Description |
 | --- | --- | 
 | Order ID | Unit identifier for each order |
@@ -116,6 +117,7 @@ The data is organised into three separate Excel sheets, each serving a distinct 
 | Loyalty Card | Pulled via XLOOKUP |
 
 - Customers
+
 | Customer ID | Unique identifier |
 | Customer Name | Full name |
 | Email | Contact email |
