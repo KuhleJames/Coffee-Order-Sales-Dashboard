@@ -51,7 +51,16 @@ Deliver a repeatable, documented Excel-based analysis and dashboard that:
 
 ## Key Metrics & KPIs
 
+Below are the core KPIs used in the dashboard and how to compute them:
 
+- Sales Over Time – Total sales by month/quarter/year
+- Sales by Geography – Revenue contribution by country
+- Top Customers – Sales ranking of top 5 customers
+- Roast Type Performance — Revenue share by roast type
+- Size Preference — Revenue contribution by product size
+- Loyalty Program Impact — Average spend and sales share from loyalty card holders
+- Coffee Type Demand — Sales distribution by coffee type
+- Customer Retention Potential – Repeat purchases among top customers
 
 
 
