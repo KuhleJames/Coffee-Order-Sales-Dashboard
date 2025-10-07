@@ -143,7 +143,9 @@ Products — Product details:
 | Price per 100 g | Calculated metric |
 | Profit | Profit per unit |
 
-
+Note
+- The dataset is provided in Excel format (.xlsx), making it easy to import into Excel for cleaning, enrichment, and analysis.
+- Orders are linked to Customers and Products via Customer ID and Product ID, forming a simple relational structure suitable for lookups and dashboarding.
 
 
 
