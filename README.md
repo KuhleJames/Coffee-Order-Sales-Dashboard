@@ -16,6 +16,7 @@
   - [Structure & Format](#structure-&-format)
 - [Data Preparation](#data-preparation)
   - [Cleaning Steps & Examples](#cleaning-steps-&-examples)
+  - [Data Enrichment Examples](#data-enrichment-examples)
   - [Quality Checks](#Quality-Checks)
 - [Excel Analysis—How each business question was answered](#excel-analysis-how-each-business-question-was-answered)
 - [Advanced Formulas & Calculations](#advanced-formulas-&-calculations)
