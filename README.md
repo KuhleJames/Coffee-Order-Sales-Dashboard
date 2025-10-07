@@ -96,7 +96,7 @@ The dataset for this project comes from a YouTube tutorial by Mo Chen, which pro
 ### Structure & Format
 The data is organised into three separate Excel sheets, each serving a distinct role in the analysis:
 
-Orders
+Orders — Transactional data cpturing each sale:
 
 | Column | Description |
 | --- | --- | 
@@ -117,8 +117,7 @@ Orders
 | Roast Type Name | Pulled via IF |
 | Loyalty Card | Pulled via XLOOKUP |
 
-
-Customers
+Customers — Customer information:
 
 | Column | Description |
 | --- | --- | 
@@ -132,7 +131,17 @@ Customers
 | Postcode | Postal Code |
 | Loyalty Card | Yes/No indicator for loyalty program |
 
+Products — Product details:
 
+| Column | Description |
+| --- | --- | 
+| Product ID | Unique identifier |
+| Cofee Type | Arabica, Robusta, Excelsa, Liberica |
+| Roast Type | Lihgt, Medium, Dark |
+| Size | 250 g, 0.5 kg, 1 kg |
+| Unit Price| Price per unit |
+| Price per 100 g | Calculated metric |
+| Profit | Profit per unit |
 
 
 
