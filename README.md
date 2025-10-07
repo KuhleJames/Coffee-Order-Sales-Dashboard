@@ -120,6 +120,8 @@ Orders
 
 Customers
 
+| Column | Description |
+| --- | --- | 
 | Customer ID | Unique identifier |
 | Customer Name | Full name |
 | Email | Contact email |
