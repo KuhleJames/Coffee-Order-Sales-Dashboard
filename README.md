@@ -53,15 +53,51 @@ Deliver a repeatable, documented Excel-based analysis and dashboard that:
 
 Below are the core KPIs used in the dashboard and how to compute them:
 
-- Sales Over Time – Total sales by month/quarter/year
-- Sales by Geography – Revenue contribution by country
-- Top Customers – Sales ranking of top 5 customers
+- Sales Over Time — Total sales by month/quarter/year
+- Sales by Geography — Revenue contribution by country
+- Top Customers — Sales ranking of top 5 customers
 - Roast Type Performance — Revenue share by roast type
 - Size Preference — Revenue contribution by product size
 - Loyalty Program Impact — Average spend and sales share from loyalty card holders
 - Coffee Type Demand — Sales distribution by coffee type
-- Customer Retention Potential – Repeat purchases among top customers
+- Customer Retention Potential — Repeat purchases among top customers
 
+## Tools & Workflow
+
+This project was completed entirely in Microsoft Excel, following a structured process that combined data cleaning, enrichment, analysis, and dashboard design, all within a single, reproducible workflow.
+
+Data Cleaning & Preparation
+- Imported raw data from three Excel sheets: Orders, Customers, and Products.
+- Cleaned the dataset by removing duplicates, correcting data types, and standardizing text entries (e.g., roast type, size).
+- Ensured consistent date formats and converted unit prices and sales values to numeric form.
+- Added a calculated Sales column using:
+
+=Quantity * Unit_Price
+
+Data Enrichment
+- Merged information across sheets using lookup functions:
+  - XLOOKUP to retrieve customer details (name, email, country) and loyalty card members.
+  - INDEX + MATCH to pull product attributes (coffee type, roast type, size).
+  - IF to extract coffee type name and roast type name from product attributes.
+
+Analysis & Aggregation
+- Built PivotTables to summarise key metrics such as total sales, sales by country, roast type performance, and top customers.
+- Applied calculated fields within PivotTables to compare different segments (e.g., loyalty vs. non-loyalty spend).
+- Tested calculations using filtered tables to ensure accuracy and consistency.
+
+Dashboard Development
+
+- Designed an interactive Excel dashboard combining:
+  - Line charts for total sales over time.
+  - Bar charts for country and top customers.
+  - Slicers for Roast Type Name, Size, and Loyalty Card.
+- Aligned charts for visual balance and optimised color contrast for readability.
+- Ensured slicers dynamically update all visuals, allowing users to explore insights seamlessly.
+
+Documentation & Workflow Traceability
+
+- Each step, from raw data cleaning to final dashboard, was documented within the Excel workbook (separate tabs labeled Raw Data, Cleaned Data, Dashboard).
+- The GitHub repository includes the final Excel file, documentation, and step-by-step notes to allow others to reproduce the results.
 
 
 
